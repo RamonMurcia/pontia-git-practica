@@ -1,12 +1,13 @@
 name: Demo manual
 
 on:
-	workflow_dispatch:
-		inputs:
-			mensaje:
-				description:"Introduce mensaje de texto"
-				required:true
-				type:string
+  workflow_dispatch:
+    inputs:
+      mensaje:
+        description: "Introduce mensaje de texto"
+        required: true
+        type: string
+
 jobs:
   imprime-mensaje:
     runs-on: ubuntu-latest
