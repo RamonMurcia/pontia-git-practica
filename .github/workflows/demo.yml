@@ -1,0 +1,13 @@
+on:
+	workflow_dispatch
+		inputs:
+			mensaje:
+				description:"Introduce mensaje de texto"
+				required:true
+				type:string
+jobs:
+	ImprimeMensaje:
+		runs-on:ubuntu-latest
+		steps:
+			- name:Imprimir Mensaje
+			run: echo "${{ github.event.inputs.mensaje }}"	
